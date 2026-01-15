@@ -9,6 +9,8 @@ function Game(canvasId) {
   this.snake = new Snake(this.field);
   this.generateRandomApple();
   this.score = 0;
+  this.highscore = 0;
+
   self.graphic.setScore(self.score);
 
   var ctx = this;
