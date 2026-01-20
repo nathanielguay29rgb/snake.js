@@ -55,6 +55,14 @@ SnakeGraphic.prototype.setScore = function(score) {
   this.ctx.fillText(score, 10, 30);
 };
 
+SnakeGraphic.prototype.setHighScore = function(highScore) {
+  this.ctx.font = '30px Arial';
+  this.ctx.fillStyle = 'black';
+  this.ctx.fillRect(0, 0, 700, 30);
+  this.ctx.fillStyle = 'red';
+  this.ctx.fillText(highScore, 10, 30);
+};
+
 /**
  * Draw the snake and the apple
  * @param {[{x: Number, y: Number}]} snake

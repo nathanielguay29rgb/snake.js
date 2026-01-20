@@ -9,7 +9,7 @@ function Game(canvasId) {
   this.snake = new Snake(this.field);
   this.generateRandomApple();
   this.score = 0;
-  this.highscore = 0;
+  this.highScore = 0;
 
   self.graphic.setScore(self.score);
 
@@ -72,7 +72,11 @@ Game.prototype.update = function(self) {
     self.snake.grow();
     self.generateRandomApple();
     self.score += 100;
+    if (self.score > self.highScore){
+      self.highScore = self.score;
+    }
     self.graphic.setScore(self.score);
+    self.graphic.setHighScore(self.highScore);
   }
   self.graphic.draw(self.snake.get());
 };
