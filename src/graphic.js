@@ -50,7 +50,7 @@ SnakeGraphic.prototype.setApple = function(pos) {
 SnakeGraphic.prototype.setScore = function(score) {
   this.ctx.font = '30px Arial';
   this.ctx.fillStyle = 'black';
-  this.ctx.fillRect(0, 0, 200, 30);
+  this.ctx.fillRect(0, 0, 100, 30);
   this.ctx.fillStyle = 'yellow';
   this.ctx.fillText(score, 10, 30);
 };
@@ -58,9 +58,9 @@ SnakeGraphic.prototype.setScore = function(score) {
 SnakeGraphic.prototype.setHighScore = function(highScore) {
   this.ctx.font = '30px Arial';
   this.ctx.fillStyle = 'black';
-  this.ctx.fillRect(0, 0, 700, 30);
+  this.ctx.fillRect(100, 0, 400, 30);
   this.ctx.fillStyle = 'red';
-  this.ctx.fillText(highScore, 10, 30);
+  this.ctx.fillText(highScore, 300, 30);
 };
 
 /**
